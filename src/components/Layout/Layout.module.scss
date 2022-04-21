@@ -4,3 +4,28 @@
 .layout {
     lost-center: $layout-width;
 }
+
+@include breakpoint-md {
+    .layout {
+      &__content-wrap { //todo make component
+       margin-top: 15px;
+      }
+      &__navbar { //todo make component
+        height: 10px;
+        position: absolute;
+        left: 0;
+        display: block;
+        width: 100%;
+        background: rgb(2,0,36);
+       /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#475084+19,9b1f7c+27,475084+94 */
+        background: #475084; /* Old browsers */
+        background: -moz-linear-gradient(top, #475084 19%, #9b1f7c 27%, #475084 94%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #475084 19%,#9b1f7c 27%,#475084 94%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #475084 19%,#9b1f7c 27%,#475084 94%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#475084', endColorstr='#475084',GradientType=0 ); /* IE6-9 */
+
+        transition: background 0.5s;
+        padding: 0.5rem 1.5rem;
+      }
+    }
+  }

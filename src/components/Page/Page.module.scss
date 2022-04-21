@@ -1,11 +1,22 @@
 @import '../../assets/scss/variables';
 @import '../../assets/scss/mixins';
+@import '../../assets/scss/variables';
 
 .page {
+  background-color: $color-white;
+  margin-top: 2rem;
   @include margin-bottom(2);
 
   &__inner {
     padding: 25px 20px;
+  }
+
+  &__navbar { //todo make component
+    $item-color: $color-white;
+    background-color: $color-white;
+    box-shadow: 0 0 10px rgba(14, 14, 14, 0.26);
+    transition: background 0.5s;
+    padding: 0.5rem 1.5rem;
   }
 
   &__title {

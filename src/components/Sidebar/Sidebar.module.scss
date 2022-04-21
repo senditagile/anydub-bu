@@ -11,20 +11,29 @@
 
 @include breakpoint-sm {
     .sidebar {
+        margin-top: 2rem;
+        text-align: center;
         lost-column: 5/12;
         &__inner {
-            padding: 30px 20px 0;
-            &:after {
-                background: $color-gray-border;
-                background: linear-gradient(to bottom, $color-gray-border 0%, $color-gray-border 48%, $color-white 100%);
-                position: absolute;
-                content: '';
-                width: 1px;
-                height: 540px;
-                top: 30px;
-                right: -10px;
-                bottom: 0;
+            background: $color-white;
+            padding: 30px 20px 0 20px;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            height: 100%;
+            @media (max-width: 992px) {
+              margin-bottom: 15px;
             }
+            margin-left: auto;
+            // &:after {
+            //     background: $color-gray-border;
+            //     background: linear-gradient(to bottom, $color-gray-border 0%, $color-gray-border 48%, $color-white 100%);
+            //     position: absolute;
+            //     content: '';
+            //     width: 1px;
+            //     height: 540px;
+            //     top: 30px;
+            //     right: -10px;
+            //     bottom: 0;
+            // }
         }
     }
 }

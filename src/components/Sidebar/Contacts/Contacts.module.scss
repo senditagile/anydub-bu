@@ -11,7 +11,7 @@
     flex-shrink: 0;
     list-style: none;
     padding: 0;
-    margin: 10px -3px;
+    margin: 10px auto 0 auto;
     width: 140px;
 
     &-item {
@@ -26,7 +26,7 @@
       line-height: $button-height;
       border-radius: 50%;
       text-align: center;
-      border: 1px solid $color-gray-bg;
+      // border: 1px solid $color-gray-bg;
 
       &-link {
         border: 0;

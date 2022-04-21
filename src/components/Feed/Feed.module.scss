@@ -9,6 +9,31 @@
       @include margin-bottom(.5);
     }
 
+    &-header-image {
+      background-position: center;
+      @media (min-width: 576px) {
+        min-height: 15rem;
+      }
+      background-repeat: no-repeat;
+      -o-object-fit: cover;
+      object-fit: cover;
+      background-size: cover;
+      min-height: 5.7rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      transition: all 0.5s ease 0s;
+  
+      &:hover {
+        opacity: 0.7;
+  
+        .data {
+          transform: translateY(-1em);
+          transition: transform 0.3s;
+        }
+      }
+    }
+
     &-title {
       font-size: $typographic-base-font-size * 1.6875;
       @include line-height(1.5);

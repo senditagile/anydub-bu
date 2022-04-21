@@ -14,7 +14,10 @@ type Props = {
 };
 
 const Post = ({ post }: Props) => {
+  // console.log(JSON.stringify(post));
   const { html } = post;
+  const { html: body } = post;
+  console.log(JSON.stringify(html));
   const { tagSlugs, slug } = post.fields;
   const { tags, title, date } = post.frontmatter;
 

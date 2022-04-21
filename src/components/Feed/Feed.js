@@ -12,6 +12,9 @@ const Feed = ({ edges }: Props) => (
   <div className={styles['feed']}>
     {edges.map((edge) => (
       <div className={styles['feed__item']} key={edge.node.fields.slug}>
+        <Link to={edge.node.fields.slug}>
+          <div className={styles['feed__item-header-image']} style={{backgroundImage: ` url(${edge.node.frontmatter.socialImage?.publicURL})`}} />
+        </Link>
         <div className={styles['feed__item-meta']}>
           <time className={styles['feed__item-meta-time']} dateTime={ new Date(edge.node.frontmatter.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}>
           { new Date(edge.node.frontmatter.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long' })}

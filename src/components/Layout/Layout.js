@@ -35,7 +35,9 @@ const Layout = ({
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={metaImageUrl} />
       </Helmet>
-      {children}
+      <div className={styles['layout__content-wrap']}>
+        {children}
+      </div>     
     </div>
   );
 };
