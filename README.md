@@ -40,7 +40,7 @@ This app is built with gatsby, netlify cms, react javascript, node, graphql, net
 
 ### anydub todos backlog
 
-+ Finish this documentation and cleanup links
++ Finish documentation and cleanup links
 + Modal template, video components, and implementation with modal connecting appealing to blog content read
 + Verify operational or, if necessary, update rss feed to operational
 + Proof of concept automating social media post from anydub rss feed with metricool
